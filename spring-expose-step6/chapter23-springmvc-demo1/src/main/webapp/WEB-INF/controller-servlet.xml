@@ -30,6 +30,7 @@
           class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <value>
+                <!-- = 左边是请求URI，右边是 Controller Bean Name -->
                 ttmRateList.do=ttmRateListController
                 test.do=/test.do
                 <!--/user*.do=userManagerController-->

@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>chapter23-springmvc-demo1</module>
+        <module>springframework-test</module>
+        <module>commons-logging-test</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -33,6 +35,12 @@
                 <groupId>javax.servlet</groupId>
                 <artifactId>servlet-api</artifactId>
                 <version>2.5</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.13</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

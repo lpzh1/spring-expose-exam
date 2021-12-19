@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:contex="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       ">
 
+    <!-- spring 3.0 以上 jdk5 以上才能使用 -->
+    <!--<contex:component-scan base-package="cn.spring21.simplefx.servlet"/>-->
 
     <bean id="ttmRateService"
           class="cn.spring21.simplefx.service.MockTTMRateService">
     </bean>
-
+    <bean id="demoServletProxy" class="cn.spring21.simplefx.servlet.DemoServletProxy"></bean>
 </beans>
